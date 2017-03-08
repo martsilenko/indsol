@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+/* font-family: 'Russo One', sans-serif; */
+/* иконочный шрифт */
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "symbols-nerds";
+  src: url("../fonts/symbols-nerds.woff") format("woff"),
+       url("../fonts/symbols-nerds.woff2") format("woff2");
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: black;
+
+}
+.main-header {
+	background:rgb(255, 255 ,255) url(../img/flexo_tape_4.jpg) 50%  no-repeat;
+	background-size: auto 145%;
+}
+
+/* Миксины */
+.container {
+	width: 1100px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.clearfix::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.main-logo-block,
+.main-navigation-block,
+.user-bucket-block {
+	float: left;
+}
+.user-bucket-block {
+	margin: 20px 0 20px 140px;
+}
+
+.main-logo-block {
+	margin-right: 70px;
+	margin-left: 5px;
+}
+
+
+.main-navigation-block {
+	margin: 20px 0;
+}
+
+.main-navigation-list li {
+	display: inline-block;
+	margin: 0 10px;
+}
+.main-navigation-list a {
+	display: block;
+	text-decoration: none;
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #bc131a;            /*Бордовый*/
+	padding: 10px 0;
+}
+.main-navigation-list a:hover {
+	color: #016f3e;
+}
+.main-navigation-list-active:hover {
+	color: #016f3e;
+}
+.main-navigation-list-active {  
+	display: block;
+	text-decoration: none;
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #bc131a;
+	padding: 10px 0;
+	-webkit-box-shadow: inset 0px -2px 0px 0px rgba(0,141,79,1);
+	-moz-box-shadow: inset 0px -2px 0px 0px rgba(0,141,79,1);
+	box-shadow: inset 0px -2px 0px 0px rgba(0,141,79,1);
+	cursor:pointer;
+}
+
+.user-bucket-block a {
+	display: block;
+	text-decoration: none;
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #bc131a;            /*Бордовый*/
+	padding: 10px 10px;
+	cursor: pointer;
+	position: relative;
+}
+.user-bucket-block a:hover {
+	color: #016f3e
+}
+.user-bucket-block a::before {
+	display: block;
+	position: absolute;
+	left: -15px;
+	content: "\62";
+	font-family: "symbols-nerds";
+	font-size: 16px;
+	line-height: 20px;
+	color: #bc131a;
+	font-weight: normal;
+}
+.user-bucket-block a:hover::before {
+	color: #016f3e
+}
+
+.main-title {
+	font-family: 'Russo One', sans-serif;
+	font-size: 22px;
+	line-height: 30px;
+	padding: 10px 0;
+	color: #bc131a;
+	position: relative;
+}
+.main-title::after {
+	display: block;
+	width: 60px;
+	height: 40px;
+	content: "";
+	position: absolute;
+	top: 38px;
+	right: 0px;
+	background: url(../img/for-logo.png);
+	background-size: cover;
+}
+
+.main-title::before {
+	display: block;
+	content: "";
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 9px;
+	left: -7px;
+	border: 2px solid #016f3e;
+}
+
+
+.main-header-advert-block {
+	padding: 30px 10px 80px 10px;
+}
+.main-header-advert-block ul li {
+	margin: 10px 0;
+}
+
+.main-header-advert-block h2 {
+	font-family: 'Russo One', sans-serif;
+	font-size: 50px;
+	color: black;
+	line-height: 50px;
+	font-weight: bold;
+	background-color: rgba(251, 251, 251, 0.7);
+	display: inline-block;
+	padding: 0 10px 0 5px;
+	border-radius: 5px;
+/* 	text-shadow: 2px 0px 2px rgba(204, 150, 150, 1); */
+	
+}
+
+
+
