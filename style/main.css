@@ -167,6 +167,18 @@ body {
 /* 	text-shadow: 2px 0px 2px rgba(204, 150, 150, 1); */
 	
 }
+.catalog{
+    text-align: center;
+}
 
+.category{
+    margin-left: 10%;
+    color: red;
+    font-style: italic;
+}
+.category :hover{
+    color: green;
+    opacity: 0.5;
+}
 
 
